@@ -1,0 +1,155 @@
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   BASIS
+========================= */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #2f4558; /* donker blauw/grijs */
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+    background-color: #3c566e;
+    padding: 1.5rem 2rem;
+    border-bottom: 4px solid #1f3446;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.student-info {
+    font-size: 0.9rem;
+    opacity: 0.85;
+    margin-top: 0.3rem;
+}
+
+/* =========================
+   NAVIGATIE
+========================= */
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 1rem;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+nav a:hover,
+nav a.active {
+    opacity: 1;
+    border-bottom: 2px solid #ffffff;
+}
+
+/* =========================
+   MAIN
+========================= */
+main {
+    padding: 2.5rem;
+}
+
+/* =========================
+   CARD (treinscherm look)
+========================= */
+.card {
+    background-color: #9e9e9e;
+    color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 6px;
+    max-width: 1000px;
+    margin-bottom: 2.5rem;
+    box-shadow: inset 0 0 0 4px #bdbdbd;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+/* =========================
+   DOWNLOAD / ACTIE KNOP
+========================= */
+.download-btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    background-color: #1f3446;
+    color: #ffffff;
+    padding: 0.8rem 1.6rem;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.download-btn:hover {
+    background-color: #162734;
+}
+
+/* =========================
+   BACK HOME LINK
+========================= */
+.back-home {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.back-home:hover {
+    opacity: 1;
+}
+
+/* =========================
+   AFBEELDINGEN (treinschermen)
+========================= */
+.card img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+/* =========================
+   FIGMA PROTOTYPE
+========================= */
+iframe {
+    width: 100%;
+    height: 600px;
+    border: 4px solid #1f3446;
+    border-radius: 6px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background-color: #1f3446;
+    padding: 1.2rem;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+footer a {
+    color: #ffffff;
+    font-weight: 600;
+}

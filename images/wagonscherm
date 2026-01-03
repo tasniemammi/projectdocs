@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<title>Wagonscherm</title>
+
+<style>
+body {
+  margin: 0;
+  background: #1f2a33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.screen {
+  width: 720px;
+  background: #2f3e4a;
+  padding: 14px;
+}
+
+.inner {
+  background: #a9a9a9;
+  padding: 14px;
+  color: white;
+}
+
+/* ===== BOVENBALK ===== */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+}
+
+.top-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.top-right {
+  text-align: right;
+  font-size: 14px;
+}
+
+/* ===== ROUTE ===== */
+.route {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.route span {
+  margin: 0 8px;
+}
+
+/* ===== HOOFDGEDEELTE ===== */
+.main {
+  margin-top: 12px;
+  background: #bdbdbd;
+  padding: 12px;
+  color: white;
+}
+
+.next {
+  font-size: 18px;
+}
+
+.station {
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 4px;
+}
+
+.arrival {
+  margin-top: 6px;
+  font-size: 18px;
+}
+
+/* ===== TREIN ===== */
+.train-row {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  gap: 12px;
+}
+
+.train {
+  font-size: 48px;
+}
+
+.icons {
+  display: flex;
+  gap: 14px;
+  font-size: 28px;
+}
+
+/* ===== DAARNA ===== */
+.after {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.after span {
+  display: block;
+  margin-left: 20px;
+}
+
+/* ===== WAARSCHUWING ===== */
+.warning {
+  margin-top: 12px;
+  background: #c9a300;
+  color: black;
+  font-size: 14px;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="screen">
+  <div class="inner">
+
+    <div class="top">
+      <div class="top-left">
+        <div><strong>Intercity 1523</strong></div>
+        <div>Brussel-Zuid <span>→</span> Antwerpen Centraal</div>
+      </div>
+
+      <div class="top-right">
+        <div>18°C &nbsp; 🕒 14:25</div>
+        <div>Wifi beschikbaar</div>
+        <div>2de klas</div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="next">Volgende station:</div>
+      <div class="station">Mechelen</div>
+      <div class="arrival">Aankomst: <strong>14:30</strong></div>
+
+      <div class="train-row">
+        <div class="train">🚆</div>
+        <div class="icons">
+          <span title="WC">🚻</span>
+          <span title="Fiets">🚲</span>
+          <span title="Stiltecoupé">🤫</span>
+        </div>
+      </div>
+
+      <div class="after">
+        Daarna:
+        <span>Hove Station – Berchem Station – Antwerpen Centraal</span>
+      </div>
+    </div>
+
+    <div class="warning">
+      ⚠️ Controleer bij het verlaten van de trein of u al uw bagage heeft meegenomen.
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

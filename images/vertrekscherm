@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Vertrekscherm</title>
+    <style>
+        body {
+            background-color: #2f3f4e;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .board {
+            width: 950px;
+            margin: 40px auto;
+            border: 3px solid #2aa1ff;
+            background-color: #a9a9a9;
+        }
+
+        /* Bovenste tabs */
+        .tabs {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            background-color: #9f9f9f;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+            font-size: 26px;
+        }
+
+        .tab {
+            padding: 20px 0;
+            border-right: 2px solid #8c8c8c;
+        }
+
+        .tab:last-child {
+            border-right: none;
+        }
+
+        /* Tabel */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        thead {
+            background-color: #9f9f9f;
+            color: white;
+            font-size: 18px;
+        }
+
+        th, td {
+            padding: 14px 12px;
+            border-top: 1px solid #8c8c8c;
+        }
+
+        th {
+            text-align: left;
+            font-weight: bold;
+        }
+
+        tbody td {
+            font-size: 18px;
+        }
+
+        .time-col {
+            width: 100px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .destination-col {
+            width: 560px;
+        }
+
+        .track-col {
+            width: 90px;
+            text-align: center;
+        }
+
+        .type-col {
+            width: 90px;
+            text-align: center;
+        }
+
+        /* Klok-icoon */
+        .clock {
+            width: 30px;
+            height: 30px;
+            border: 2px solid white;
+            border-radius: 50%;
+            margin: auto;
+            position: relative;
+        }
+
+        .clock::before {
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 10px;
+            background: white;
+            top: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .clock::after {
+            content: "";
+            position: absolute;
+            width: 8px;
+            height: 2px;
+            background: white;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+
+<div class="board">
+
+    <div class="tabs">
+        <div class="tab">Depart</div>
+        <div class="tab">Vertrek</div>
+        <div class="tab">Abfahrt</div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th class="time-col"><div class="clock"></div></th>
+                <th class="destination-col">Bestemming - Destination - Ziel</th>
+                <th class="track-col">Spoor</th>
+                <th class="type-col">Type</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td class="time-col">10:25</td>
+                <td class="destination-col">Brussel-Zuid / Bruxelles-Midi</td>
+                <td class="track-col">8</td>
+                <td class="type-col">IC</td>
+            </tr>
+
+            <tr>
+                <td class="time-col">10:37</td>
+                <td class="destination-col">Antwerpen-Centraal</td>
+                <td class="track-col">4</td>
+                <td class="type-col">IC</td>
+            </tr>
+
+            <tr>
+                <td class="time-col">10:45</td>
+                <td class="destination-col">Gent-Sint-Pieters</td>
+                <td class="track-col">6</td>
+                <td class="type-col">IC</td>
+            </tr>
+
+            <tr>
+                <td class="time-col">10:58</td>
+                <td class="destination-col">Leuven</td>
+                <td class="track-col">2</td>
+                <td class="type-col">L</td>
+            </tr>
+
+            <tr>
+                <td class="time-col">11:10</td>
+                <td class="destination-col">Liège-Guillemins / Luik</td>
+                <td class="track-col">9</td>
+                <td class="type-col">IC</td>
+            </tr>
+
+            <tr>
+                <td class="time-col">11:24</td>
+                <td class="destination-col">Charleroi-Central</td>
+                <td class="track-col">5</td>
+                <td class="type-col">S</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Perronscherm</title>
+
+  <style>
+    body {
+      background: #222;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .screen {
+      background: #2f3e4a;
+      padding: 18px;
+      width: 440px;
+    }
+
+    .screen-inner {
+      background: #b3b3b3;
+      padding: 18px;
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      margin-bottom: 18px;
+    }
+
+    .time {
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    .platform {
+      font-size: 20px;
+    }
+
+    .platform span {
+      font-weight: bold;
+    }
+
+    .table {
+      width: 100%;
+    }
+
+    .table-header,
+    .table-row {
+      display: grid;
+      grid-template-columns: 80px 1fr 60px;
+      padding: 6px 0;
+    }
+
+    .table-header {
+      font-weight: bold;
+      color: white;
+      border-bottom: 2px solid #888;
+      margin-bottom: 6px;
+    }
+
+    .table-row {
+      border-bottom: 1px solid #888;
+      color: #222;
+    }
+
+    .table-row div {
+      padding: 4px 6px;
+    }
+
+    .table-row.empty div {
+      height: 22px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="screen">
+    <div class="screen-inner">
+
+      <div class="top-bar">
+        <div class="time">09:25</div>
+        <div class="platform">Perron: <span>6</span></div>
+      </div>
+
+      <div class="table">
+
+        <div class="table-header">
+          <div>VERTREK</div>
+          <div>BESTEMMING</div>
+          <div>TYPE</div>
+        </div>
+
+        <div class="table-row">
+          <div>09:40</div>
+          <div>Antwerpen-Centraal</div>
+          <div>IC</div>
+        </div>
+
+        <div class="table-row">
+          <div>10:05</div>
+          <div>Gent-Sint-Pieters</div>
+          <div>IC</div>
+        </div>
+
+        <div class="table-row">
+          <div>10:25</div>
+          <div>Brussel-Zuid</div>
+          <div>IC</div>
+        </div>
+
+        <div class="table-row">
+          <div>10:48</div>
+          <div>Leuven</div>
+          <div>S</div>
+        </div>
+
+        <div class="table-row">
+          <div>11:10</div>
+          <div>Oostende</div>
+          <div>IC</div>
+        </div>
+
+        <!-- lege rijen zoals op echte perronschermen -->
+        <div class="table-row empty"><div></div><div></div><div></div></div>
+        <div class="table-row empty"><div></div><div></div><div></div></div>
+        <div class="table-row empty"><div></div><div></div><div></div></div>
+
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
